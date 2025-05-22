@@ -1,32 +1,83 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ca">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nom del Projecte</title>
+  <title>DigitCat - Solucions Digitals</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Nom del Projecte</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inici</a></li>
-        <li><a href="qui-som.html">Qui som</a></li>
-        <li><a href="contacte.html">Contacte</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1>DigitCat</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Inici</a></li>
+          <li><a href="qui-som.html">Qui som</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Benvinguts</h2>
-      <p>Aquesta és la pàgina principal del projecte.</p>
+  <section class="hero">
+    <div class="container">
+      <h2>Transformem la teva empresa amb tecnologia digital</h2>
+      <p>Solucions creatives, eficients i 100% adaptades a les teves necessitats.</p>
+      <a href="contacte.html" class="btn-primary">Contacta'ns</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="serveis">
+      <h3>Els nostres serveis</h3>
+      <div class="serveis-grid">
+        <article>
+          <h4>Disseny Web</h4>
+          <p>Creem webs atractives, responsives i fàcils d'utilitzar per a qualsevol dispositiu.</p>
+        </article>
+        <article>
+          <h4>Marketing Digital</h4>
+          <p>Impulsa el teu negoci amb estratègies SEO, SEM i xarxes socials.</p>
+        </article>
+        <article>
+          <h4>Consultoria IT</h4>
+          <p>T'assessorem per escollir les millors eines i processos digitals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="diferencies">
+      <h3>Per què escollir-nos?</h3>
+      <ul>
+        <li><strong>+10 anys</strong> d’experiència en transformació digital.</li>
+        <li><strong>Equip multidisciplinari</strong> i creatiu.</li>
+        <li><strong>Tracte personalitzat</strong> amb cada client.</li>
+        <li><strong>Projectes 100% a mida</strong>, des del disseny fins a la publicació.</li>
+      </ul>
+    </section>
+
+    <section class="testimonis">
+      <h3>Què diuen els nostres clients</h3>
+      <div class="testimoni">
+        <p>“Gràcies a DigitCat, ara la nostra empresa té una presència digital impecable. 100% recomanat!”</p>
+        <span>— Clara Font, CEO de NaturaTech</span>
+      </div>
+      <div class="testimoni">
+        <p>“Professionalitat, rapidesa i resultats. El millor partner tecnològic que hem tingut.”</p>
+        <span>— Jordi Mas, Director Comercial a PrintLab</span>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Nom del Projecte</p>
+    <div class="container">
+      <p>&copy; 2025 DigitCat · Desenvolupat amb passió i colors vius.</p>
+    </div>
   </footer>
 </body>
 </html>

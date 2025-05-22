@@ -5,43 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qui som - DigitCat</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://thumbs.dreamstime.com/b/gato-del-chocolate-de-york-46020018.jpg" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>DigitCat</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inici</a></li>
-        <li><a href="qui-som.html">Qui som</a></li>
-        <li><a href="contacte.html">Contacte</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1>DigitCat</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="qui-som.html" class="active">Qui som</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section>
       <h2>Qui som</h2>
-      <p>Som una empresa catalana especialitzada en solucions digitals per a petites i mitjanes empreses. El nostre objectiu és ajudar-te a transformar el teu negoci amb eines digitals eficients i modernes.</p>
+      <p>DigitCat és una empresa especialitzada en solucions digitals per a pimes. Combinant innovació, creativitat i tecnologia, oferim serveis que impulsen el teu negoci al següent nivell.</p>
     </section>
 
-    <section>
+    <section class="equip">
       <h3>El nostre equip</h3>
-      <p>Format per professionals apassionats de la tecnologia i el disseny web, combinem creativitat i coneixement tècnic per oferir-te la millor solució.</p>
-      <img src="img/equip.jpg" alt="Foto de l'equip DigitCat" style="max-width:100%; height:auto;">
-    </section>
-
-    <section>
-      <h3>Valors</h3>
-      <ul>
-        <li>Innovació i creativitat</li>
-        <li>Compromís amb el client</li>
-        <li>Transparència i proximitat</li>
-      </ul>
+      <div class="equip-grid">
+        <div class="membre">
+          <img src="img/persona1.jpg" alt="Membre de l'equip">
+          <h4>rprjose</h4>
+          <p>Directora de projectes</p>
+        </div>
+        <div class="membre">
+          <img src="img/persona2.jpg" alt="Membre de l'equip">
+          <h4>Marc Rovira</h4>
+          <p>Expert en UX/UI</p>
+        </div>
+        <div class="membre">
+          <img src="img/persona3.jpg" alt="Membre de l'equip">
+          <h4>Júlia Serra</h4>
+          <p>Especialista en SEO</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 DigitCat</p>
+    <div class="container">
+      <p>&copy; 2025 DigitCat · Compromesos amb la qualitat digital.</p>
+    </div>
   </footer>
 </body>
 </html>
