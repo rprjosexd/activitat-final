@@ -1,4 +1,176 @@
-:root {
+/* styles.css */
+
+/* Tipografia global */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Encapçalament i navegació */
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd54f;
+}
+
+.nav-links li a.active {
+  border-bottom: 2px solid #ffd54f;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #42a5f5, #1e88e5);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #ffd54f;
+  color: #0d47a1;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffca28;
+}
+
+/* Seccions */
+.serveis, .diferencies, .testimonis, .contacte {
+  margin-top: 3rem;
+}
+
+.serveis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serveis-grid article {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.serveis-grid article:hover {
+  transform: translateY(-5px);
+}
+
+.diferencies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.diferencies ul li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.diferencies ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #1e88e5;
+}
+
+.testimoni {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border-left: 4px solid #0d47a1;
+  border-radius: 4px;
+}
+
+.testimoni span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Formulari */
+.form-contacte {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-contacte input,
+.form-contacte textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-contacte button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}:root {
   --primary-color: #004080;
   --secondary-color: #0066cc;
   --light-color: #f9f9f9;
@@ -133,4 +305,42 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+
+
+.form-contacte button:hover {
+  background-color: #1565c0;
+}
+
+/* Peu de pàgina */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Animacions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
