@@ -1,3 +1,4 @@
+<!-- contacte.html -->
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -8,38 +9,43 @@
 </head>
 <body>
   <header>
-    <h1>DigitCat</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inici</a></li>
-        <li><a href="qui-som.html">Qui som</a></li>
-        <li><a href="contacte.html" class="active">Contacte</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1>DigitCat</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="qui-som.html">Qui som</a></li>
+          <li><a href="contacte.html" class="active">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+    <section class="contacte">
       <h2>Contacta amb nosaltres</h2>
-      <p>Estarem encantats d’escoltar-te. Emplena el formulari següent i ens posarem en contacte amb tu tan aviat com sigui possible.</p>
+      <p>Omple el formulari i et respondrem al més aviat possible.</p>
 
-      <form action="#" method="post" class="formulari-contacte">
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required>
+      <form action="#" method="post" class="form-contacte">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
 
-        <label for="email">Correu electrònic:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="correu">Correu electrònic</label>
+        <input type="email" id="correu" name="correu" required />
 
-        <label for="missatge">Missatge:</label>
+        <label for="missatge">Missatge</label>
         <textarea id="missatge" name="missatge" rows="5" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="btn-primary">Enviar</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 DigitCat</p>
+    <div class="container">
+      <p>&copy; 2025 DigitCat · Contacte</p>
+    </div>
   </footer>
 </body>
 </html>
+
