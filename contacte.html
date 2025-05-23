@@ -26,7 +26,7 @@
       <h2>Contacta amb nosaltres</h2>
       <p>Omple el formulari i et respondrem al més aviat possible.</p>
 
-      <form action="#" method="post" class="form-contacte">
+      <form method="post" class="form-contacte" id="formContacte">
         <label for="nom">Nom</label>
         <input type="text" id="nom" name="nom" required />
 
@@ -38,6 +38,11 @@
 
         <button type="submit" class="btn-primary">Enviar</button>
       </form>
+
+      <!-- Missatge de confirmació -->
+      <div id="missatge-enviat" class="msg-enviat">
+        Envia el teu formulari
+      </div>
     </section>
   </main>
 
@@ -46,6 +51,22 @@
       <p>&copy; 2025 DigitCat · Contacte</p>
     </div>
   </footer>
+
+  <!-- JavaScript per mostrar missatge i reiniciar -->
+  <script>
+    const form = document.getElementById('formContacte');
+    const missatge = document.getElementById('missatge-enviat');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Evita el comportament per defecte (el #)
+      missatge.classList.add('mostrar'); // Mostra el missatge
+      form.reset(); // Neteja el formulari
+
+      // Espera 2.5 segons i reinicia la pàgina
+      setTimeout(() => {
+        window.location.href = 'contacte.html';
+      }, 2500);
+    });
+  </script>
 </body>
 </html>
-
